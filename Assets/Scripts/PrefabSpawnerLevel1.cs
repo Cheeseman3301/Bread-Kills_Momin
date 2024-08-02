@@ -7,7 +7,7 @@ public class PrefabSpawnerLevel1 : MonoBehaviour
     public GameObject backgroundPrefab;
     public GameObject wall;
     public GameObject bread;
-    public GameObject arm;
+   // public GameObject arm;
 
     public Vector3[] ledgesPos = new Vector3[2]; // Array to hold positions for 2 prefabs
     public Vector3[] cyborgPos = new Vector3[2];
@@ -18,8 +18,8 @@ public class PrefabSpawnerLevel1 : MonoBehaviour
     Vector3 cyborgPos0 = new Vector3(0.75f, -0.68f, 0);
     Vector3 cyborgPos1 = new Vector3(-1.79f, 1.66f, 0);
     Vector3 wallpos = new Vector3(0.1234f,0.6120f,0f);
-    Vector3 breadpos = new Vector3(-1.48f,-3.58f,0f);
-    Vector3 armpos = new Vector3(0.045f, 0.025f,0f);
+    Vector3 breadpos = new Vector3(-1.52f,-3.31f,0f);
+   // Vector3 armpos = new Vector3(-1.49f, -3.65f,0f);
 
     void Start()
     {
@@ -28,8 +28,8 @@ public class PrefabSpawnerLevel1 : MonoBehaviour
 
        // for (int i = 0; i < ledges.Length; i++)
        // {
-            GameObject breadinstance = Instantiate(bread, breadpos,Quaternion.identity);
-            GameObject arminstance = Instantiate(arm, armpos,Quaternion.identity);
+           // GameObject breadinstance = Instantiate(bread, breadpos,Quaternion.identity);
+         //   GameObject arminstance = Instantiate(arm, armpos,Quaternion.identity);
             GameObject ledgeInstance = Instantiate(ledges[0], ledgesPos0, Quaternion.identity);
             GameObject ledgeInstance2 = Instantiate(ledges[1], ledgesPos1, Quaternion.identity);
             GameObject cyborgInstance = Instantiate(cyborgs[0], cyborgPos0, Quaternion.identity);
