@@ -8,6 +8,7 @@ public class Bullet : MonoBehaviour
     private int bounceCount = 0; // Tracks the number of bounces
     [SerializeField] private Vector2 direction; // Bullet's direction (already serialized)
     private Vector3 lastVelocity; // Stores the previous velocity
+     public int kills = 0; 
 
     void Start()
     {
@@ -40,18 +41,8 @@ public class Bullet : MonoBehaviour
 
         if (collision.gameObject.CompareTag("Enemy"))
         {
-            // Handle enemy collision
-            Debug.Log("Collided with Cyborg");
-
-            // Assuming you have an animator component with a "Hit" parameter
-            Animator animator = collision.gameObject.GetComponent<Animator>();
-            if (animator != null)
-            {
-                animator.SetBool("Hit", true);
-
-                // No need to get the value again, as it's already set to true
-                // Debug.Log("Hit parameter value: " + animator.GetBool("Hit"));
-            }
+            kills++;
+            Cyborg cyborg = collision.gameObject.GetComponent<Cyborg>();
 
             Destroy(collision.gameObject); // Destroy the enemy on collision
         }
