@@ -14,6 +14,7 @@ public class MoveGun : MonoBehaviour
 
     private float lastTapTime;
     private const float doubleTapTime = 0.3f; // Adjust this value as needed
+    public int NoOfBullets = 5;
 
     void Update()
     {
@@ -33,7 +34,13 @@ public class MoveGun : MonoBehaviour
                 float currentTime = Time.time;
                 if (currentTime - lastTapTime <= doubleTapTime)
                 {
-                    fireBullet();
+                    Debug.Log("double tap detected");
+                    if (NoOfBullets>0)
+                    {
+                       NoOfBullets--;
+                       fireBullet();
+                    }
+                    
                 }
                 lastTapTime = currentTime;
             }
@@ -48,7 +55,6 @@ public class MoveGun : MonoBehaviour
 
         // Calculate the direction from the gun to the touch position
         direction = (worldPosition - (Vector2)gun.transform.position).normalized;
-         Debug.Log("touching screen 2");
         // Rotate the gun to face the touch position
         gun.transform.right = direction;
     }
@@ -61,8 +67,12 @@ public class MoveGun : MonoBehaviour
    //}
   void fireBullet()
     {
+        Debug.Log("in fire function");
         bulletInst = Instantiate(bullet, bulletSpawnPoint.position, gun.transform.rotation);
+        Debug.Log("bullet should appear");
         bulletInst.GetComponent<Rigidbody2D>().velocity = gun.transform.right * bulletSpeed;
+        Debug.Log("Bullet velocity: " + bulletInst.GetComponent<Rigidbody2D>().velocity);
     }
+    
     
 }

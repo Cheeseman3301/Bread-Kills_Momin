@@ -25,6 +25,7 @@ public class PrefabSpawnerLevel1 : MonoBehaviour
     {
         Instantiate(backgroundPrefab, backgroundPos, Quaternion.identity);
         Instantiate(wall, wallpos, Quaternion.identity);
+        Instantiate(bread, breadpos, Quaternion.identity);
 
        // for (int i = 0; i < ledges.Length; i++)
        // {
