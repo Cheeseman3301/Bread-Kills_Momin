@@ -565,6 +565,26 @@ PrefabInstance:
       propertyPath: moveGun
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 1234204818616589690, guid: c76c8cb612268424db89519a34273706, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 338
+      objectReference: {fileID: 0}
+    - target: {fileID: 1234204818616589690, guid: c76c8cb612268424db89519a34273706, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 1057
+      objectReference: {fileID: 0}
+    - target: {fileID: 5479050066691883188, guid: c76c8cb612268424db89519a34273706, type: 3}
+      propertyPath: m_margin.w
+      value: -41.554688
+      objectReference: {fileID: 0}
+    - target: {fileID: 5479050066691883188, guid: c76c8cb612268424db89519a34273706, type: 3}
+      propertyPath: m_margin.x
+      value: -715.66644
+      objectReference: {fileID: 0}
+    - target: {fileID: 5479050066691883188, guid: c76c8cb612268424db89519a34273706, type: 3}
+      propertyPath: m_margin.z
+      value: -23.085938
+      objectReference: {fileID: 0}
     - target: {fileID: 6196410351442338631, guid: c76c8cb612268424db89519a34273706, type: 3}
       propertyPath: m_LocalPosition.x
       value: 829

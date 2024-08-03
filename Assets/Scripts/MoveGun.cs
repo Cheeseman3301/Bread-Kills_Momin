@@ -59,19 +59,12 @@ public class MoveGun : MonoBehaviour
         gun.transform.right = direction;
     }
 
-    //void fireBullet(Vector2 direction)
-   // {
-        //bulletInst = Instantiate(bullet, bulletSpawnPoint.position, gun.transform.rotation);
-       // bulletInst.GetComponent<Rigidbody2D>().velocity = direction * bulletSpeed;
-      
-   //}
   void fireBullet()
     {
-        Debug.Log("in fire function");
+        
         bulletInst = Instantiate(bullet, bulletSpawnPoint.position, gun.transform.rotation);
-        Debug.Log("bullet should appear");
         bulletInst.GetComponent<Rigidbody2D>().velocity = gun.transform.right * bulletSpeed;
-        Debug.Log("Bullet velocity: " + bulletInst.GetComponent<Rigidbody2D>().velocity);
+        
     }
     
     
