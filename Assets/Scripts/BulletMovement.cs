@@ -43,9 +43,9 @@ public class Bullet : MonoBehaviour
         {
             kills++;
             Cyborg cyborg = collision.gameObject.GetComponent<Cyborg>();
-            //cyborg.OnHit();
+            cyborg.OnHit();
 
-            Destroy(collision.gameObject); // Destroy the enemy on collision
+           // Destroy(collision.gameObject); // Destroy the enemy on collision
         }
 
         if (bounceCount >= maxBounces)

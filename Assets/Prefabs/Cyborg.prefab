@@ -11,6 +11,9 @@ GameObject:
   - component: {fileID: 5291159021769371207}
   - component: {fileID: 2808999968801028333}
   - component: {fileID: 7274576196028804813}
+  - component: {fileID: 4779967201120466887}
+  - component: {fileID: 8137134405964106079}
+  - component: {fileID: 3255338071701446783}
   m_Layer: 0
   m_Name: Cyborg
   m_TagString: Enemy
@@ -27,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 7232380706525877922}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.92, y: -0.13, z: 0}
+  m_LocalPosition: {x: 1.07, y: -0.7, z: 0}
   m_LocalScale: {x: 0.27885234, y: 0.2685014, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -150,3 +153,64 @@ PolygonCollider2D:
       - {x: 2.2, y: -2.01}
       - {x: 3, y: -2.01}
   m_UseDelaunayMesh: 0
+--- !u!114 &4779967201120466887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7232380706525877922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9920fd62a9aa24f4da434756bfb3573a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 200
+--- !u!95 &8137134405964106079
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7232380706525877922}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7abd3e3acde87dc418ac93fb7f7821db, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!50 &3255338071701446783
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7232380706525877922}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0

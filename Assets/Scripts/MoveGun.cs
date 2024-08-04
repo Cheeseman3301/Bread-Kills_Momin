@@ -42,7 +42,6 @@ public class MoveGun : MonoBehaviour
                     if (NoOfBullets > 0)
                     {
                         NoOfBullets--;
-                        Debug.Log("NoOfBullets:"+ NoOfBullets);
                         fireBullet();
                     }
                 }
