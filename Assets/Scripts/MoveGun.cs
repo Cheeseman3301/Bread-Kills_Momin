@@ -8,6 +8,7 @@ public class MoveGun : MonoBehaviour
     [SerializeField] private GameObject bullet;
     [SerializeField] private Transform bulletSpawnPoint;
   
+    public static MoveGun instance;
 
     private GameObject bulletInst;
     public float bulletSpeed = 4.0f;
@@ -18,6 +19,10 @@ public class MoveGun : MonoBehaviour
     private const float doubleTapTime = 0.3f; // Adjust this value as needed
     public int NoOfBullets = 5;
 
+    void Start()
+    {
+        instance = this; // Assign this script instance to the static variable
+    }
     void Update()
     {
         if (Input.touchCount > 0)
@@ -26,7 +31,6 @@ public class MoveGun : MonoBehaviour
 
             if (touch.phase == TouchPhase.Moved || touch.phase == TouchPhase.Stationary)
             {
-                Debug.Log("touching screen");
                 HandleGunRotation(touch);
             }
 
@@ -35,10 +39,10 @@ public class MoveGun : MonoBehaviour
                 float currentTime = Time.time;
                 if (currentTime - lastTapTime <= doubleTapTime)
                 {
-                    Debug.Log("double tap detected");
                     if (NoOfBullets > 0)
                     {
                         NoOfBullets--;
+                        Debug.Log("NoOfBullets:"+ NoOfBullets);
                         fireBullet();
                     }
                 }

@@ -1,4 +1,3 @@
-
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
@@ -9,8 +8,6 @@ public class ScoreManager : MonoBehaviour
 
     public int score;
     public TextMeshProUGUI scoreText;
-
-    public MoveGun moveGun; // Reference to MoveGun script
 
     private void Awake()
     {
@@ -23,7 +20,6 @@ public class ScoreManager : MonoBehaviour
     private void Start()
     {
         score = 0;
-        moveGun = FindObjectOfType<MoveGun>(); // Find MoveGun script in the scene
         UpdateScoreText();
     }
 
@@ -32,23 +28,17 @@ public class ScoreManager : MonoBehaviour
         score += scoreToAdd;
         UpdateScoreText();
     }
-
+    private void Update()
+    {
+        UpdateScoreText();
+    }
     private void UpdateScoreText()
     {
-        scoreText.text = "Score: " + score + " Bullets: " + moveGun.NoOfBullets;
+        scoreText.text = "Score: " + score + " Bullets: " + MoveGun.instance.NoOfBullets;
     }
 
-  
     public void CyborgKilled(Cyborg cyborg)
-   {
-
-     //if (bullet.kills >= 2)
-       // {
-            // Award double kill bonus
-          //  score += 100;
-            // Update UI or play sound effect for double kill
-       // }
-    
-   }
-    
+    {
+        // ...
+    }
 }
