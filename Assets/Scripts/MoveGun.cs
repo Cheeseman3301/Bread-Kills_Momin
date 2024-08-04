@@ -7,9 +7,11 @@ public class MoveGun : MonoBehaviour
     [SerializeField] private GameObject gun;
     [SerializeField] private GameObject bullet;
     [SerializeField] private Transform bulletSpawnPoint;
+  
 
     private GameObject bulletInst;
     public float bulletSpeed = 4.0f;
+      public float rotationSpeed = 90f; 
     public Vector2 direction;
 
     private float lastTapTime;
@@ -26,7 +28,6 @@ public class MoveGun : MonoBehaviour
             {
                 Debug.Log("touching screen");
                 HandleGunRotation(touch);
-
             }
 
             if (touch.phase == TouchPhase.Ended)
@@ -35,19 +36,17 @@ public class MoveGun : MonoBehaviour
                 if (currentTime - lastTapTime <= doubleTapTime)
                 {
                     Debug.Log("double tap detected");
-                    if (NoOfBullets>0)
+                    if (NoOfBullets > 0)
                     {
-                       NoOfBullets--;
-                       fireBullet();
+                        NoOfBullets--;
+                        fireBullet();
                     }
-                    
                 }
                 lastTapTime = currentTime;
             }
         }
     }
-
-    private void HandleGunRotation(Touch touch)
+  private void HandleGunRotation(Touch touch)
     {
         // Get the touch position in world coordinates
         Vector2 touchPosition = touch.position;
@@ -59,13 +58,9 @@ public class MoveGun : MonoBehaviour
         gun.transform.right = direction;
     }
 
-  void fireBullet()
+    void fireBullet()
     {
-        
         bulletInst = Instantiate(bullet, bulletSpawnPoint.position, gun.transform.rotation);
         bulletInst.GetComponent<Rigidbody2D>().velocity = gun.transform.right * bulletSpeed;
-        
     }
-    
-    
 }
