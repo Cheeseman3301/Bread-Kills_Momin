@@ -12,7 +12,7 @@ public class MoveGun : MonoBehaviour
 
     private GameObject bulletInst;
     public float bulletSpeed = 4.0f;
-      public float rotationSpeed = 90f; 
+    public float rotationSpeed = 90f; 
     public Vector2 direction;
 
     private float lastTapTime;
@@ -65,5 +65,9 @@ public class MoveGun : MonoBehaviour
     {
         bulletInst = Instantiate(bullet, bulletSpawnPoint.position, gun.transform.rotation);
         bulletInst.GetComponent<Rigidbody2D>().velocity = gun.transform.right * bulletSpeed;
+    }
+      public int GetNoofBullets()
+    {
+        return NoOfBullets;
     }
 }

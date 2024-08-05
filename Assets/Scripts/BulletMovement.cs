@@ -4,7 +4,7 @@ public class Bullet : MonoBehaviour
 {
     public float speed = 4f; // Public variable for setting bullet speed in Inspector
     private Rigidbody2D rb; // Private Rigidbody2D reference
-    [SerializeField] private int maxBounces = 20; // Maximum number of bounces (already serialized)
+    [SerializeField] private int maxBounces = 7; // Maximum number of bounces (already serialized)
     private int bounceCount = 0; // Tracks the number of bounces
     [SerializeField] private Vector2 direction; // Bullet's direction (already serialized)
     private Vector3 lastVelocity; // Stores the previous velocity

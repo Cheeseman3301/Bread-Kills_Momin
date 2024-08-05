@@ -8,13 +8,18 @@ public class ScoreManager : MonoBehaviour
 
     public int score;
     public TextMeshProUGUI scoreText;
-
+   
     private void Awake()
     {
         if (instance == null)
         {
             instance = this;
         }
+    }
+
+    public int GetScore()
+    {
+        return score;
     }
 
     private void Start()
@@ -36,9 +41,17 @@ public class ScoreManager : MonoBehaviour
     {
         scoreText.text = "Score: " + score + " Bullets: " + MoveGun.instance.NoOfBullets;
     }
-
+    void OnDestroy()
+    {
+        // Save score to PlayerPrefs when the scene is about to be destroyed
+        PlayerPrefs.SetInt("Score", score);
+    }
     public void CyborgKilled(Cyborg cyborg)
     {
         // ...
     }
 }
+
+
+
+

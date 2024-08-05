@@ -4,6 +4,7 @@ using System.Collections;
 public class Cyborg : MonoBehaviour
 {
     public int scoreValue = 200;
+    [SerializeField] public int noOfCyborgs;
     private bool isHit = false;
     Animator animator;
 
@@ -21,6 +22,7 @@ public class Cyborg : MonoBehaviour
         isHit = true;
         animator.SetBool("isHit", isHit);
        StartCoroutine(ResetHit());
+       noOfCyborgs--;
     }
     IEnumerator ResetHit()
    {
@@ -31,13 +33,12 @@ public class Cyborg : MonoBehaviour
     void Update()
     {
         bool animatorIsHit = animator.GetBool("isHit");
-        Debug.Log("Animator isHit: " + animatorIsHit);
+     //   Debug.Log("Animator isHit: " + animatorIsHit);
     
-    // if (isHit)
-    //   {
-    //     // Trigger the "Hit" animation using a trigger parameter
-    //     isHit = false; // Reset the flag after triggering the animation
-    //   }
+    }
+    public int GetNoOfCyborgs()
+    {
+        return noOfCyborgs;
     }
 }
 
