@@ -19,10 +19,13 @@ public class Cyborg : MonoBehaviour
    
     public void OnHit() // Function called when the cyborg is hit by a bullet
     {
-        isHit = true;
-        animator.SetBool("isHit", isHit);
-       StartCoroutine(ResetHit());
-       noOfCyborgs--;
+      isHit = true;
+      animator.SetBool("isHit", isHit);
+      StartCoroutine(ResetHit());
+
+      noOfCyborgs--;
+      Debug.Log("Here:" + noOfCyborgs);
+       
     }
     IEnumerator ResetHit()
    {
@@ -33,7 +36,7 @@ public class Cyborg : MonoBehaviour
     void Update()
     {
         bool animatorIsHit = animator.GetBool("isHit");
-     //   Debug.Log("Animator isHit: " + animatorIsHit);
+        Debug.Log("NoofCyborgs: " + noOfCyborgs);
     
     }
     public int GetNoOfCyborgs()

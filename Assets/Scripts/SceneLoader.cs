@@ -6,12 +6,13 @@ using UnityEngine.SceneManagement;
 public class SceneLoader : MonoBehaviour   
 {
     public MoveGun moveGun; // Reference to the MoveGun script
+    public Cyborg cyborg;
 
     private bool isWaiting = false;
 
     void Update()
     {
-        if (!isWaiting && moveGun.GetNoofBullets() == 0)
+        if (!isWaiting && moveGun.GetNoofBullets() == 0 || cyborg.GetNoOfCyborgs() == 0)
         {
             isWaiting = true;
             StartCoroutine(LoadNextSceneAfterDelay());

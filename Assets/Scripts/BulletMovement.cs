@@ -31,10 +31,8 @@ public class Bullet : MonoBehaviour
         bounceCount++;
 
         string objectName = collision.gameObject.name;
-        Debug.Log("Collided with: " + objectName);
-        Debug.Log("Bounces: " + bounceCount);
-
-        // Calculate new direction and speed based on collision
+       
+     
         var newSpeed = lastVelocity.magnitude;
         var newDirection = Vector3.Reflect(lastVelocity.normalized, collision.contacts[0].normal);
         rb.velocity = newDirection * Mathf.Max(newSpeed, 0f);
@@ -50,8 +48,7 @@ public class Bullet : MonoBehaviour
 
         if (bounceCount >= maxBounces)
         {
-            Debug.Log("Maximum bounces reached, destroying bullet");
-            Destroy(gameObject); // Destroy the bullet after exceeding bounces
+            Destroy(gameObject); 
         }
     }
 }
