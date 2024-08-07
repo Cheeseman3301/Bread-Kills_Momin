@@ -46,10 +46,7 @@ public class ScoreManager : MonoBehaviour
         // Save score to PlayerPrefs when the scene is about to be destroyed
         PlayerPrefs.SetInt("Score", score);
     }
-    public void CyborgKilled(Cyborg cyborg)
-    {
-        // ...
-    }
+    
 }
 
 

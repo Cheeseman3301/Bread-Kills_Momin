@@ -5,10 +5,10 @@ public class Bullet : MonoBehaviour
     public float speed = 4f; // Public variable for setting bullet speed in Inspector
     private Rigidbody2D rb; // Private Rigidbody2D reference
     [SerializeField] private int maxBounces = 7; // Maximum number of bounces (already serialized)
-    private int bounceCount = 0; // Tracks the number of bounces
     [SerializeField] private Vector2 direction; // Bullet's direction (already serialized)
     private Vector3 lastVelocity; // Stores the previous velocity
-     public int kills = 0; 
+    private int bounceCount = 0; // Tracks the number of bounces
+    public int kills = 0; 
 
     void Start()
     {
@@ -24,6 +24,7 @@ public class Bullet : MonoBehaviour
     void Update()
     {
         lastVelocity = rb.velocity; // Update lastVelocity
+       
     }
 
     void OnCollisionEnter2D(Collision2D collision)
@@ -42,8 +43,6 @@ public class Bullet : MonoBehaviour
             kills++;
             Cyborg cyborg = collision.gameObject.GetComponent<Cyborg>();
             cyborg.OnHit();
-
-           //Destroy(collision.gameObject); // Destroy the enemy on collision
         }
 
         if (bounceCount >= maxBounces)

@@ -5,14 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class SceneLoader : MonoBehaviour   
 {
-    public MoveGun moveGun; // Reference to the MoveGun script
-    public Cyborg cyborg;
-
+    public MoveGun moveGun; // Reference to the MoveGun scripts
+    public CyborgManager cyborgmanager;
     private bool isWaiting = false;
 
     void Update()
     {
-        if (!isWaiting && moveGun.GetNoofBullets() == 0 || cyborg.GetNoOfCyborgs() == 0)
+        if (!isWaiting && moveGun.GetNoofBullets() == 0 || cyborgmanager.GetNoOfCyborgs() < 1)
         {
             isWaiting = true;
             StartCoroutine(LoadNextSceneAfterDelay());

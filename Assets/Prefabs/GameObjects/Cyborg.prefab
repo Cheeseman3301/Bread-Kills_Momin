@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 7232380706525877922}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.07, y: -0.7, z: 0}
+  m_LocalPosition: {x: 1.3, y: -0.76, z: 0}
   m_LocalScale: {x: 0.27885234, y: 0.2685014, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -166,6 +166,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreValue: 200
+  noOfCyborgs: 2
 --- !u!95 &8137134405964106079
 Animator:
   serializedVersion: 5

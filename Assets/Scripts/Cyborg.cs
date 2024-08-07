@@ -7,25 +7,33 @@ public class Cyborg : MonoBehaviour
     [SerializeField] public int noOfCyborgs;
     private bool isHit = false;
     Animator animator;
+    private Collider2D cyborgCollider;
+    int hits = 0;
+
+    
 
     void Start()
     {
         animator = GetComponent<Animator>();
+        cyborgCollider = GetComponent<Collider2D>();
     }
     private void OnDestroy()
     {
-        ScoreManager.instance.AddScore(scoreValue);
+       // ScoreManager.instance.AddScore(scoreValue);
     }
    
     public void OnHit() // Function called when the cyborg is hit by a bullet
     {
+      hits++;
       isHit = true;
       animator.SetBool("isHit", isHit);
       StartCoroutine(ResetHit());
+      if (hits==1)
+      {
+        ScoreManager.instance.AddScore(scoreValue);
+        CyborgManager.instance.DecrementCyborgCount();
+      }
 
-      noOfCyborgs--;
-      Debug.Log("Here:" + noOfCyborgs);
-       
     }
     IEnumerator ResetHit()
    {
@@ -36,13 +44,26 @@ public class Cyborg : MonoBehaviour
     void Update()
     {
         bool animatorIsHit = animator.GetBool("isHit");
-        Debug.Log("NoofCyborgs: " + noOfCyborgs);
+        
     
     }
-    public int GetNoOfCyborgs()
-    {
-        return noOfCyborgs;
-    }
+   
+    // void OnCollisionEnter2D(Collision2D collision)
+    // {
+    //     if (!HitOnce && collision.gameObject.CompareTag("Bullet"))
+    //     {
+    //         HitOnce = true;
+    //         //cyborgCollider.isTrigger = true; // Enable trigger
+    //         // Handle hit logic here
+    //     }
+    //     else 
+    //     {
+    //          Physics2D.IgnoreCollision(GetComponent<Collider2D>(), collision.collider);
+    //     }
+   // }
+    void DestroyObject()
+   {
+    GetComponent<Renderer>().enabled = false;
+   }
+
 }
-
-
