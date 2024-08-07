@@ -749,10 +749,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4609971879191503259, guid: 9fe28bd9b63195e49b1b9ba07381ff39, type: 3}
-      propertyPath: cyborg
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4609971879191503259, guid: 9fe28bd9b63195e49b1b9ba07381ff39, type: 3}
       propertyPath: moveGun
       value: 
       objectReference: {fileID: 765087131}

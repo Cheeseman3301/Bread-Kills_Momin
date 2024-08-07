@@ -45,4 +45,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveGun: {fileID: 0}
-  cyborg: {fileID: 0}
+  cyborgmanager: {fileID: 0}
