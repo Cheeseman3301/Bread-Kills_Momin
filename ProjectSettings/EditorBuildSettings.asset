@@ -14,9 +14,12 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/temp.unity
     guid: 43ad03e5eb2553244af862dfad27cb00
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Level2.unity
     guid: 3cbe17ddf55f96543ac6974d8b4048ea
+  - enabled: 1
+    path: Assets/Scenes/MominsDumbLevel2.unity
+    guid: c54eb7b06b6dfc547b1893505f2b2ce2
   - enabled: 1
     path: Assets/Scenes/ScoreDisplay.unity
     guid: 92717b9903e52af468b992cf64337a8c

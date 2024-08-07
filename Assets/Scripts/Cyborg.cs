@@ -4,7 +4,6 @@ using System.Collections;
 public class Cyborg : MonoBehaviour
 {
     public int scoreValue = 200;
-    [SerializeField] public int noOfCyborgs;
     private bool isHit = false;
     Animator animator;
     private Collider2D cyborgCollider;

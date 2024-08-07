@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d9d26ea3a87876746bb3d4e4982b418d
+guid: 8b790537a5f4d5b429333c7509fb705a
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,13 +123,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: cyborg_death_0
+      name: omni boss final death sprite_0
       rect:
         serializedVersion: 2
-        x: 618
-        y: 3742
-        width: 406
-        height: 544
+        x: 46
+        y: 12
+        width: 105
+        height: 180
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,20 +137,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7d8bd6f87ef4bee4ba0d378e06306911
-      internalID: -2107831893
+      spriteID: 221da91e641fdf34ba6400e3afa528e7
+      internalID: 1965139265
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cyborg_death_1
+      name: omni boss final death sprite_1
       rect:
         serializedVersion: 2
-        x: 1892
-        y: 3718
-        width: 393
-        height: 602
+        x: 241
+        y: 7
+        width: 110
+        height: 193
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -158,20 +158,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8cb8b22b7e8fe5b4e94f9208eb31f156
-      internalID: -1590797625
+      spriteID: 42b6fa872dc3486438160effe19672fa
+      internalID: -1602271497
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cyborg_death_2
+      name: omni boss final death sprite_2
       rect:
         serializedVersion: 2
-        x: 3088
-        y: 3718
-        width: 465
-        height: 590
+        x: 422
+        y: 14
+        width: 147
+        height: 186
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -179,20 +179,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: de29df4f59995aa4cbc3ea3b153a9dbd
-      internalID: -217084223
+      spriteID: 03774ba4e70cb134e9a7c78c4341b764
+      internalID: -309625284
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cyborg_death_3
+      name: omni boss final death sprite_3
       rect:
         serializedVersion: 2
-        x: 4226
-        y: 3682
-        width: 590
-        height: 571
+        x: 603
+        y: 19
+        width: 173
+        height: 171
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7445f1e582a92354eab7c7fed65f8539
-      internalID: 1327411080
+      spriteID: a49f599cc7b67f94ab5c21c4402e410b
+      internalID: -1596025752
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cyborg_death_4
+      name: omni boss final death sprite_4
       rect:
         serializedVersion: 2
-        x: 368
-        y: 2917
-        width: 572
-        height: 580
+        x: 800
+        y: 36
+        width: 187
+        height: 140
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -221,20 +221,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 671cc66f7b2c91d4693fd89b79a647b8
-      internalID: -1280503984
+      spriteID: 4452aa4ffb2a6ef43ae8f466e09e9817
+      internalID: -176248206
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cyborg_death_5
+      name: omni boss final death sprite_5
       rect:
         serializedVersion: 2
-        x: 1495
-        y: 2917
-        width: 764
-        height: 461
+        x: 999
+        y: 46
+        width: 202
+        height: 113
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -242,20 +242,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 87df8bc3f88d8f648ac8ef81fd067090
-      internalID: 524262648
+      spriteID: f72f23edbce37bb4eab024735e69e0ab
+      internalID: 1328351515
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cyborg_death_6
+      name: omni boss final death sprite_6
       rect:
         serializedVersion: 2
-        x: 2830
-        y: 2853
-        width: 736
-        height: 571
+        x: 1204
+        y: 49
+        width: 182
+        height: 101
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -263,20 +263,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 62a0872929a41114ea759d2b0bb22177
-      internalID: -1596516150
+      spriteID: 1c53677db7eda6c45aabb5d2bfc8b04a
+      internalID: 1425381412
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cyborg_death_7
+      name: omni boss final death sprite_7
       rect:
         serializedVersion: 2
-        x: 4130
-        y: 2899
-        width: 663
-        height: 460
+        x: 1408
+        y: 49
+        width: 182
+        height: 105
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -284,20 +284,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7e415af3ae729134cb8ff834aa75bcef
-      internalID: 2130484487
+      spriteID: d81b18fb098d1c240957cbed8204bc01
+      internalID: 1660703193
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cyborg_death_8
+      name: omni boss final death sprite_8
       rect:
         serializedVersion: 2
-        x: 324
-        y: 2226
-        width: 627
-        height: 498
+        x: 1609
+        y: 51
+        width: 185
+        height: 101
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -305,20 +305,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 553b937737c1d6540aa9847c1a5c15e8
-      internalID: 1887035507
+      spriteID: df91f554526e38d47bfc50c783da0f53
+      internalID: 91719687
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cyborg_death_9
+      name: omni boss final death sprite_9
       rect:
         serializedVersion: 2
-        x: 1517
-        y: 2222
-        width: 716
-        height: 453
+        x: 1808
+        y: 51
+        width: 185
+        height: 99
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -326,230 +326,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 85cd1a6515fb6b74eb97625279d404e2
-      internalID: 1535950904
+      spriteID: 4ace52dd9ffc7184cb95b0e1e5f76a2e
+      internalID: -1854213969
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cyborg_death_10
+      name: omni boss final death sprite_10
       rect:
         serializedVersion: 2
-        x: 2831
-        y: 2213
-        width: 643
-        height: 508
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 01d0d3d5c69f7304682778c283d2eba9
-      internalID: 740764090
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: cyborg_death_11
-      rect:
-        serializedVersion: 2
-        x: 4115
-        y: 2240
-        width: 643
-        height: 399
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e0112d4ddbb1c47429fe276f9d7bacd1
-      internalID: 778854304
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: cyborg_death_12
-      rect:
-        serializedVersion: 2
-        x: 290
-        y: 1488
-        width: 634
-        height: 381
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fe472debcbc82e949bb4e88b9c86d0fb
-      internalID: 690132075
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: cyborg_death_13
-      rect:
-        serializedVersion: 2
-        x: 1580
-        y: 1461
-        width: 634
-        height: 480
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e150569cceef39f47a5b6a2b7a2db507
-      internalID: 1702856486
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: cyborg_death_14
-      rect:
-        serializedVersion: 2
-        x: 2840
-        y: 1488
-        width: 643
-        height: 435
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 612c0f38e81071749b20e850fcbc23b1
-      internalID: -108293990
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: cyborg_death_15
-      rect:
-        serializedVersion: 2
-        x: 4127
-        y: 1506
-        width: 679
-        height: 454
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 37c0c7d73c0c86f44a940503a57dbb3b
-      internalID: 1563200762
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: cyborg_death_16
-      rect:
-        serializedVersion: 2
-        x: 265
-        y: 758
-        width: 616
-        height: 495
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d0e43b6542c0fca4c92a8fe8dfe7eecb
-      internalID: 1225827916
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: cyborg_death_17
-      rect:
-        serializedVersion: 2
-        x: 1404
-        y: 724
-        width: 849
-        height: 447
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c6c82ba3ac42c3e4f906217018b21f52
-      internalID: 1470759212
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: cyborg_death_18
-      rect:
-        serializedVersion: 2
-        x: 2735
-        y: 758
-        width: 780
-        height: 436
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 202d2ef2eb4f41c43b16d8390b210142
-      internalID: -1242271093
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: cyborg_death_19
-      rect:
-        serializedVersion: 2
-        x: 4034
-        y: 758
-        width: 680
-        height: 393
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c0ac3d3d4ec8b094b94830c09f44cf47
-      internalID: -1434333730
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: cyborg_death_20
-      rect:
-        serializedVersion: 2
-        x: 160
+        x: 2004
         y: 52
-        width: 757
-        height: 436
+        width: 192
+        height: 97
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -557,20 +347,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fd0855e229d88ca478424e20b963b062
-      internalID: 199014489
+      spriteID: c1cb204617e93fb47bbb61abf508a1d2
+      internalID: -190960983
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cyborg_death_21
+      name: omni boss final death sprite_11
       rect:
         serializedVersion: 2
-        x: 1422
-        y: 52
-        width: 791
-        height: 481
+        x: 2205
+        y: 49
+        width: 192
+        height: 101
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -578,20 +368,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7831528bb256d5a45861415fd3455ce8
-      internalID: -1034131956
+      spriteID: 9d5754782a5337f458ed8b6fc8a67f09
+      internalID: -866810518
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cyborg_death_22
+      name: omni boss final death sprite_12
       rect:
         serializedVersion: 2
-        x: 2721
-        y: 65
-        width: 766
-        height: 370
+        x: 2403
+        y: 48
+        width: 189
+        height: 100
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -599,20 +389,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 48475826170041c469ce325cb76b2e5f
-      internalID: -276251952
+      spriteID: 34664334b8990e649834239c9d09f3f5
+      internalID: 332131112
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cyborg_death_23
+      name: omni boss final death sprite_13
       rect:
         serializedVersion: 2
-        x: 4041
-        y: 57
-        width: 667
-        height: 516
+        x: 2605
+        y: 51
+        width: 189
+        height: 98
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -620,8 +410,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0060174807f09a4468ab4ce0dfa691c9
-      internalID: 27228483
+      spriteID: 12954f290f8f037459ed16781e2c5e23
+      internalID: 669232861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: omni boss final death sprite_14
+      rect:
+        serializedVersion: 2
+        x: 2804
+        y: 53
+        width: 190
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61a5777fd189ddf4abfea4d7f6514677
+      internalID: 561027734
       vertices: []
       indices: 
       edges: []
@@ -637,30 +448,21 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      cyborg_death_0: -2107831893
-      cyborg_death_1: -1590797625
-      cyborg_death_10: 740764090
-      cyborg_death_11: 778854304
-      cyborg_death_12: 690132075
-      cyborg_death_13: 1702856486
-      cyborg_death_14: -108293990
-      cyborg_death_15: 1563200762
-      cyborg_death_16: 1225827916
-      cyborg_death_17: 1470759212
-      cyborg_death_18: -1242271093
-      cyborg_death_19: -1434333730
-      cyborg_death_2: -217084223
-      cyborg_death_20: 199014489
-      cyborg_death_21: -1034131956
-      cyborg_death_22: -276251952
-      cyborg_death_23: 27228483
-      cyborg_death_3: 1327411080
-      cyborg_death_4: -1280503984
-      cyborg_death_5: 524262648
-      cyborg_death_6: -1596516150
-      cyborg_death_7: 2130484487
-      cyborg_death_8: 1887035507
-      cyborg_death_9: 1535950904
+      omni boss final death sprite_0: 1965139265
+      omni boss final death sprite_1: -1602271497
+      omni boss final death sprite_10: -190960983
+      omni boss final death sprite_11: -866810518
+      omni boss final death sprite_12: 332131112
+      omni boss final death sprite_13: 669232861
+      omni boss final death sprite_14: 561027734
+      omni boss final death sprite_2: -309625284
+      omni boss final death sprite_3: -1596025752
+      omni boss final death sprite_4: -176248206
+      omni boss final death sprite_5: 1328351515
+      omni boss final death sprite_6: 1425381412
+      omni boss final death sprite_7: 1660703193
+      omni boss final death sprite_8: 91719687
+      omni boss final death sprite_9: -1854213969
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
