@@ -372,7 +372,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 1274.2427
+  orthographic size: 1316.8683
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -784,6 +784,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1506528172}
   - component: {fileID: 1506528171}
+  - component: {fileID: 1506528173}
   m_Layer: 0
   m_Name: ScoreDisplayer
   m_TagString: Untagged
@@ -803,7 +804,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c89b2e29572cef14eb9b26d9189da57a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreText: {fileID: 0}
+  scoreText: {fileID: 1355238865}
 --- !u!4 &1506528172
 Transform:
   m_ObjectHideFlags: 0
@@ -820,6 +821,18 @@ Transform:
   - {fileID: 1058004541}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1506528173
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1506528170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ceb75da135f5494ebce907b49ada518, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2145462493
 GameObject:
   m_ObjectHideFlags: 0
