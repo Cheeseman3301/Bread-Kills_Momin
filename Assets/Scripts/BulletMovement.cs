@@ -42,7 +42,21 @@ public class Bullet : MonoBehaviour
         {
             kills++;
             Cyborg cyborg = collision.gameObject.GetComponent<Cyborg>();
-            cyborg.OnHit();
+            Boss boss = collision.gameObject.GetComponent<Boss>();
+            if (boss != null) 
+            {
+                boss.OnHit();
+            }
+             else
+            {
+                // Handle case where Boss component is missing (optional)
+                Debug.LogError("Boss component not found on enemy!");
+            }
+            if (cyborg!=null)
+            {
+               cyborg.OnHit();
+            }
+           
         }
 
         if (bounceCount >= maxBounces)
