@@ -47,12 +47,7 @@ public class Bullet : MonoBehaviour
             {
                 boss.OnHit();
             }
-             else
-            {
-                // Handle case where Boss component is missing (optional)
-                Debug.LogError("Boss component not found on enemy!");
-            }
-            if (cyborg!=null)
+            else if (cyborg!=null)
             {
                cyborg.OnHit();
             }

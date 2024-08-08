@@ -5,22 +5,29 @@ using UnityEngine;
 public class Boss : MonoBehaviour
 {
     public Transform respawnPoint; // Assign the transform object in the inspector
+    public Transform respawnPoint2; // Assign the transform object in the inspector
     public int scoreValue = 200;
     private bool isHit = false;
     Animator animator;
     private Collider2D bossCollider;
     int hits = 0;
-    //public GameObject bossPrefab;
+  
     Animator newBossAnimator;
     public void Respawn()
     {
     
     GetComponent<Renderer>().enabled = false;
     GetComponent<Collider2D>().enabled = false;
-    
-    transform.position = respawnPoint.position;
-    transform.rotation = respawnPoint.rotation;
-
+    if (hits == 1)
+    {
+      transform.position = respawnPoint.position;
+      transform.rotation = respawnPoint.rotation;
+    }
+    else if (hits == 2)
+    {
+      transform.position = respawnPoint2.position;
+      transform.rotation = respawnPoint2.rotation;
+    }
     // Enable components
     GetComponent<Renderer>().enabled = true;
     GetComponent<Collider2D>().enabled = true;
@@ -31,17 +38,17 @@ public class Boss : MonoBehaviour
         animator = GetComponent<Animator>();
         bossCollider = GetComponent<Collider2D>();
     }
-    public void OnHit() // Function called when the cyborg is hit by a bullet
+    public void OnHit() 
     {
       hits++;
       ScoreManager.instance.AddScore(scoreValue);
       
-        if (hits == 1)
+        if (hits == 1 || hits == 2)
       {
         Respawn();
         
       }
-      if (hits == 2)
+      if (hits == 3)
       {
         isHit = true;
         animator.SetBool("isHit", isHit);
