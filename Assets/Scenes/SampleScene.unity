@@ -234,6 +234,8 @@ MonoBehaviour:
   - {fileID: 7940746919473447683}
   - {fileID: 7940746919473447683}
   backgroundPrefab: {fileID: 8316129577066604299}
+  wall: {fileID: 0}
+  bread: {fileID: 0}
   ledgesPos:
   - {x: 0, y: 0, z: 0}
   - {x: 0, y: 0, z: 0}
