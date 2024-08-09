@@ -23,8 +23,9 @@ public class SceneLoader : MonoBehaviour
         yield return new WaitForSeconds(5f);
          if (cyborgmanager.GetNoOfCyborgs() > 0)
           {
-            cyborgmanager.ResetCyborgCount();
-            SceneManager.LoadScene("RetryLevel"); 
+
+           SceneManager.LoadScene("RetryLevel");  
+            Debug.Log("cyborgs set");
           }
         else
         {

@@ -8,6 +8,7 @@ public class Cyborg : MonoBehaviour
     Animator animator;
     private Collider2D cyborgCollider;
     int hits = 0;
+    public CyborgManager cyborgManager;
 
     
 
@@ -15,6 +16,7 @@ public class Cyborg : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         cyborgCollider = GetComponent<Collider2D>();
+        cyborgManager = FindObjectOfType<CyborgManager>();
     }
     private void OnDestroy()
     {
@@ -30,7 +32,7 @@ public class Cyborg : MonoBehaviour
       if (hits==1)
       {
         ScoreManager.instance.AddScore(scoreValue);
-        CyborgManager.instance.DecrementCyborgCount();
+        cyborgManager.DecrementCyborgCount();
       }
 
     }

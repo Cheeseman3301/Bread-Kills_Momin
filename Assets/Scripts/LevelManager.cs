@@ -6,6 +6,7 @@ public static class LevelManager {
     public static int totalLevelCount = 5; 
 
     public static void LoadNextLevel() {
+
         currentLevelIndex++;
         if (currentLevelIndex > totalLevelCount+1)
         {

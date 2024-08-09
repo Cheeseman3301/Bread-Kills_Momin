@@ -11,6 +11,7 @@ public class Boss : MonoBehaviour
     Animator animator;
     private Collider2D bossCollider;
     int hits = 0;
+    public CyborgManager cyborgManager;
   
     Animator newBossAnimator;
     public void Respawn()
@@ -37,6 +38,7 @@ public class Boss : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         bossCollider = GetComponent<Collider2D>();
+        cyborgManager = FindObjectOfType<CyborgManager>();
     }
     public void OnHit() 
     {
@@ -53,7 +55,7 @@ public class Boss : MonoBehaviour
         isHit = true;
         animator.SetBool("isHit", isHit);
         StartCoroutine(ResetHit());
-        CyborgManager.instance.DecrementCyborgCount();
+        cyborgManager.DecrementCyborgCount();
       }
     
 
