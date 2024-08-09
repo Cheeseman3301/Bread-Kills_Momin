@@ -7,11 +7,23 @@ public static class LevelManager {
 
     public static void LoadNextLevel() {
         currentLevelIndex++;
-
-        if (currentLevelIndex <= totalLevelCount) {
+        if (currentLevelIndex > totalLevelCount+1)
+        {
+            SceneManager.LoadScene("LastScene");
+        }
+        else if (currentLevelIndex <= totalLevelCount) {
             SceneManager.LoadScene("Level" + currentLevelIndex);
         } else {
             SceneManager.LoadScene("ScoreDisplay");
+        }
+    }
+     public static void LoadPreviousLevel() {
+        //currentLevelIndex--;
+
+        if (currentLevelIndex >= 0) {
+            SceneManager.LoadScene("Level" + currentLevelIndex);
+        } else {
+            SceneManager.LoadScene("LastScene");
         }
     }
 }

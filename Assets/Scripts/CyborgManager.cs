@@ -19,12 +19,18 @@ public class CyborgManager : MonoBehaviour
             Destroy(gameObject);
         }
     }
-
+    
     private void Start()
     {
         // Initialize totalCyborgs based on the number of cyborgs in the scene
         totalCyborgs = GameObject.FindGameObjectsWithTag("Enemy").Length;
          Debug.Log("NoofCyborgs: " + totalCyborgs);
+    }
+     public void ResetCyborgCount()
+    {
+        totalCyborgs =  GameObject.FindGameObjectsWithTag("Enemy").Length;
+        Debug.Log("NoofCyborgs: " + totalCyborgs);
+
     }
 
     public void DecrementCyborgCount()

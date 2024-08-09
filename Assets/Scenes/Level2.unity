@@ -566,11 +566,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1676114900530762293, guid: b8646bef1df8b6c408060e46fec9964c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.2729096
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1676114900530762293, guid: b8646bef1df8b6c408060e46fec9964c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.7071295
+      value: 3.23
       objectReference: {fileID: 0}
     - target: {fileID: 1676114900530762293, guid: b8646bef1df8b6c408060e46fec9964c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -603,6 +603,10 @@ PrefabInstance:
     - target: {fileID: 1676114900530762293, guid: b8646bef1df8b6c408060e46fec9964c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1949471679691468105, guid: b8646bef1df8b6c408060e46fec9964c, type: 3}
+      propertyPath: totalCyborgs
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2631222218749947013, guid: b8646bef1df8b6c408060e46fec9964c, type: 3}
       propertyPath: m_Name
