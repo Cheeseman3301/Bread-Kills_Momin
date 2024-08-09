@@ -8,7 +8,7 @@ public static class LevelManager {
     public static void LoadNextLevel() {
 
         currentLevelIndex++;
-        if (currentLevelIndex > totalLevelCount+1)
+        if (currentLevelIndex > totalLevelCount)
         {
             SceneManager.LoadScene("LastScene");
         }

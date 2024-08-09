@@ -23,14 +23,14 @@ public class SceneLoader : MonoBehaviour
         yield return new WaitForSeconds(5f);
          if (cyborgmanager.GetNoOfCyborgs() > 0)
           {
-
+            Debug.Log("levelfailed");
            SceneManager.LoadScene("RetryLevel");  
-            Debug.Log("cyborgs set");
           }
         else
-        {
+          {
+            Debug.Log("levelwon");
            SceneManager.LoadScene("ScoreDisplay"); 
-        }
+          }
         
     }
 }
